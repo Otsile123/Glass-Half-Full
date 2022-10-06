@@ -1,29 +1,44 @@
 const {Builder, By, Key, util, WebElement} = require("selenium-webdriver");
 async function example() {
-let driver= await new Builder().forBrowser("firefox").build();
-await driver.get("https://www.facebook.com");
-//Name Declaration
-//const names = ["SovTech","1234567890","SovTech123","SovTech[!@#^&(*%_)%]"," "];
-//const emails = ["sovtech@company.co.za","@gmail.com","user@gmailcom","user@gmail.c","user.com"," "];
-//const contactNumber = ["0108650161","161 161","161%","161abc"," "];
+//let driver= await new Builder().forBrowser("firefox").build();
+//await driver.get("https://www.sovtech.co.uk/contact-us");
 
-//const count=names.length;
+//Declaration
+const names = ["SovTech","1234567890","SovTech123","SovTech[!@#^&(*%_)%]"," "];
+const emails = ["sovtech@company.co.za","@gmail.com","user@gmailcom","user@gmail.c","user.com"," "];
+const contactNumber = ["0108650161","161 161","161%","161abc"," "];
+const help= ["I'd like to work for SovTech", "I'd like to work for SovTech by 2022", "I'd like to work @ SovTech"];
+
+
+const count=emails.length;
 //Loop
-//for (let index = 0; index < count; index++) {
+for (let index = 0; index < count; index++) {
 
- //   let driver= await new Builder().forBrowser("firefox").build();
- //   await driver.get("https://www.facebook.com");
-  //  await driver.findElement(By.id("email")).sendKeys(names[index]);
+
+    let driver= await new Builder().forBrowser("firefox").build();
+    await driver.get("https://www.facebook.com");
+
+    //Add a name
+    await driver.findElement(By.xpath("//*[@id='email']")).sendKeys(names[index]);
+
+    //Add email address
+    await driver.findElement(By.xpath("//*[@id='pass']")).sendKeys(emails[index]);
    
-    //driver.findElement(By.id("email")).clear(names[index]);
+    //clear name
+    //await driver.findElement(By.xpath("//*[@id='email']")).clear(names[index]);
+ 
+}
+//Submit/click the submut button
+//await driver.findElement(By.xpath("//*[@id='u_0_5_xn']")).click();
 
-//}
-await driver.findElement(By.id("loginbutton")).click();
 
-//Add a name
-//Line ke fetsa goe adda nou
+
 // Close browser
 
 //await driver.quit();
+
+//Sleep
+
+
 }
 example();
