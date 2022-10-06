@@ -24,6 +24,7 @@ for (let index = 0; index < count; index++) {
     //Add email address
     await driver.findElement(By.xpath("//*[@id='pass']")).sendKeys(emails[index]);
    
+    
     //clear name
     //await driver.findElement(By.xpath("//*[@id='email']")).clear(names[index]);
  
@@ -38,6 +39,25 @@ for (let index = 0; index < count; index++) {
 //await driver.quit();
 
 //Sleep
+
+//Loop
+/*for (let index = 0; index < count; index++) {
+
+
+  let driver= await new Builder().forBrowser("firefox").build();
+  await driver.get("https://www.sovtech.co.za/contact-us/");
+
+  //Add a name
+  await driver.findElement(By.xpath("//*[@id='your_name-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).sendKeys(names[index]);
+
+  //Add email address
+  await driver.findElement(By.xpath("//*[@id='email-c2e387f9-4bd8-496f-ab2a-81fbbc31712a']")).sendKeys(emails[index]);
+ 
+  
+  //clear name
+  //await driver.findElement(By.xpath("//*[@id='email']")).clear(names[index]);
+
+}*/
 
 
 }
