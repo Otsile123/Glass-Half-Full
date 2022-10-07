@@ -16,7 +16,7 @@ for (let index = 0; index < count; index++) {
 
 
     let driver= await new Builder().forBrowser("firefox").build();
-    await driver.get("https://www.facebook.com");
+    await driver.get("https://www.facebook.com/reg/?rs=27&__tn__=*F");
 
     //Add a name
     await driver.findElement(By.xpath("//*[@id='email']")).sendKeys(names[index]);
