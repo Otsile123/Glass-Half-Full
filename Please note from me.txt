@@ -1,0 +1,12 @@
+Firstly thank you for this opportunity i learned a lot in the passed 3-4 days
+Please note the following:
+1. I used selenium for my test scripts
+2. I used low level test case scenarios & test cases, these would be test cases for a completely new system.
+3. I never used git/github/vs code/selenium or anything like them, what i knew is manual testing & c++ coding from varsity,
+i've never done automation testing, or developed in js/for selenium, but i learned all of these in the pass 3-4 days given.
+4. Unfortunately due to my lack of experience using all these tools, i was not able to archieve 
+as much as i would've liked given the time due to my work schdule + learning all these new tools..
+I think the time given was fair but due to my experience it wasn't in my favour.I believe i can come back with top quality work given the time.
+5. I was not able to fill up the sovtech form using selenium, i really tried different methods but i failed, i used the same methods
+to fill the facebook form, & via facebook the methods work perfectly fine, please advice on what i could be missing with the SovTech website.
+Thank you
